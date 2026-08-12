@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -312,6 +311,14 @@ section{
   border-radius:999px;
   box-shadow:0 6px 16px -8px rgba(90,69,112,0.25);
   border:1px solid rgba(133,105,159,0.12);
+  text-decoration:none;
+  display:inline-block;
+  transition:transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+a.chip:hover, a.chip:focus-visible{
+  background:var(--lavender-soft);
+  transform:translateY(-2px);
+  box-shadow:0 10px 20px -8px rgba(90,69,112,0.35);
 }
 .chip.accent{
   background:var(--plum);
@@ -587,7 +594,7 @@ a:focus-visible, button:focus-visible{
         <span class="chip">Pre-Med</span>
         <span class="chip">Pre-Dental</span>
         <span class="chip">Pre-PA</span>
-        <span class="chip">Pre-PT / OT</span>
+        <a href="pre-pt.html" class="chip">Pre-PT / OT</a>
         <span class="chip">Exploring Other Health Professions</span>
       </div>
     </div>
